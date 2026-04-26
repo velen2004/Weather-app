@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCast | Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <h2 id="cityName">Welcome</h2>
+            <p id="description">Search for a city to see the weather</p>
+            <div class="temp-display">
+                <span id="temp">--</span>°C
+            </div>
+            <div class="details">
+                <div class="col">
+                    <p>Wind Speed</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+                <div class="col">
+                    <p>Weather Code</p>
+                    <strong id="code">--</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
