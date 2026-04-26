@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Pro | Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+            </div>
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- Main Weather Card -->
+        <div class="weather-card hidden" id="weatherCard">
+            <div class="main-info">
+                <h1 id="cityName">London, GB</h1>
+                <p id="date">Today</p>
+                <div class="temp-container">
+                    <span id="temp">22</span><span class="unit">°C</span>
+                </div>
+                <p id="description">Partly Cloudy</p>
+            </div>
+
+            <!-- Detailed Grid -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p>Wind</p>
+                        <strong id="wind">12 km/h</strong>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p>Humidity</p>
+                        <strong id="humidity">65%</strong>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <div>
+                        <p>Apparent</p>
+                        <strong id="feelsLike">24°C</strong>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-cloud"></i>
+                    <div>
+                        <p>Cloud Cover</p>
+                        <strong id="clouds">20%</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Initial Welcome Message -->
+        <div id="welcomeMsg" class="welcome-msg">
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+            <p>Enter a city to get started</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
